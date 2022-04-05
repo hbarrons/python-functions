@@ -17,13 +17,21 @@
 # largest([10, 4, 2, 231, 91, 54])  
 
 
-def occurrences(str1, str2):
-  print(str1.count(str2))
+# def occurrences(str1, str2):
+#   print(str1.count(str2))
+
+# occurrences('fleep floop', 'e')
+# occurrences('fleep floop', 'p')
+# occurrences('fleep floop', 'ee')
+# occurrences('fleep floop', 'fe')
+
+def product (*args):
+  num = 1
+  for i in args:
+    num *= i
+  print(num)
 
 
-
-
-occurrences('fleep floop', 'e')
-occurrences('fleep floop', 'p')
-occurrences('fleep floop', 'ee')
-occurrences('fleep floop', 'fe')
+product(-1, 4) 
+product(2, 5, 5)
+product(4, 0.5, 5)
